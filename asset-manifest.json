@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/celebal-week3/static/css/main.e1729b52.css",
+    "main.js": "/celebal-week3/static/js/main.77a17f02.js",
+    "index.html": "/celebal-week3/index.html",
+    "main.e1729b52.css.map": "/celebal-week3/static/css/main.e1729b52.css.map",
+    "main.77a17f02.js.map": "/celebal-week3/static/js/main.77a17f02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1729b52.css",
+    "static/js/main.77a17f02.js"
+  ]
+}
