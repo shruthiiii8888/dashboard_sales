@@ -12,7 +12,7 @@ const MyCalendar = () => {
 
   return (
     <Box sx={{ p: 4, backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom sx={{ color: 'royalblue' }}>
         My Calendar
       </Typography>
       <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>

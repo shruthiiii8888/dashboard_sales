@@ -21,7 +21,7 @@ const Editor = () => {
         margin: 'auto',
       }}
     >
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom sx={{ color: 'royalblue' }}>
         Editor
       </Typography>
       <ReactQuill value={text} onChange={handleTextChange} />

@@ -3,7 +3,7 @@ import { Box, Typography, Paper, Grid } from '@mui/material';
 
 const Kanban = () => (
   <Box sx={{ p: 4, backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
-    <Typography variant="h4" gutterBottom>
+    <Typography variant="h4" gutterBottom sx={{ color: 'royalblue' }}>
       Kanban Board
     </Typography>
     <Grid container spacing={2}>

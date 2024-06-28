@@ -6,6 +6,8 @@ import {
   List,
   ListItem,
   ListItemText,
+  ListItemAvatar,
+  Avatar,
   CircularProgress,
   TextField,
   Select,
@@ -13,6 +15,11 @@ import {
   FormControl,
   InputLabel,
 } from '@mui/material';
+
+// Import images
+import aliceBrownImage from './image4.png';
+import bobWhiteImage from './image5.jpeg';
+import charlieBlackImage from './image6.png';
 
 const Customers = () => {
   const [customers, setCustomers] = useState([]);
@@ -24,9 +31,24 @@ const Customers = () => {
     // Simulating an API call to fetch customers
     setTimeout(() => {
       const fetchedCustomers = [
-        { id: 1, name: 'Alice Brown', email: 'alice.brown@example.com' },
-        { id: 2, name: 'Bob White', email: 'bob.white@example.com' },
-        { id: 3, name: 'Charlie Black', email: 'charlie.black@example.com' },
+        {
+          id: 1,
+          name: 'Alice Brown',
+          email: 'alice.brown@example.com',
+          profilePicture: aliceBrownImage,
+        },
+        {
+          id: 2,
+          name: 'Bob White',
+          email: 'bob.white@example.com',
+          profilePicture: bobWhiteImage,
+        },
+        {
+          id: 3,
+          name: 'Charlie Black',
+          email: 'charlie.black@example.com',
+          profilePicture: charlieBlackImage,
+        },
       ];
       setCustomers(fetchedCustomers);
       setLoading(false);
@@ -87,6 +109,9 @@ const Customers = () => {
         <List>
           {sortedCustomers.map(customer => (
             <ListItem key={customer.id}>
+              <ListItemAvatar>
+                <Avatar src={customer.profilePicture} />
+              </ListItemAvatar>
               <ListItemText
                 primary={customer.name}
                 secondary={customer.email}

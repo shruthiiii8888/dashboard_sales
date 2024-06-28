@@ -6,6 +6,8 @@ import {
   List,
   ListItem,
   ListItemText,
+  ListItemAvatar,
+  Avatar,
   CircularProgress,
   TextField,
   Select,
@@ -13,6 +15,11 @@ import {
   FormControl,
   InputLabel,
 } from '@mui/material';
+
+// Import images
+import johnDoeImage from './image.png';
+import janeSmithImage from './image2.png';
+import mikeJohnsonImage from './image3.jpeg';
 
 const Employees = () => {
   const [employees, setEmployees] = useState([]);
@@ -24,9 +31,30 @@ const Employees = () => {
     // Simulating an API call to fetch employees
     setTimeout(() => {
       const fetchedEmployees = [
-        { id: 1, name: 'John Doe', position: 'Software Engineer' },
-        { id: 2, name: 'Jane Smith', position: 'Product Manager' },
-        { id: 3, name: 'Mike Johnson', position: 'UX Designer' },
+        {
+          id: 1,
+          name: 'John Doe',
+          position: 'Software Engineer',
+          email: 'john.doe@example.com',
+          phone: '555-555-5555',
+          profilePicture: johnDoeImage,
+        },
+        {
+          id: 2,
+          name: 'Jane Smith',
+          position: 'Product Manager',
+          email: 'jane.smith@example.com',
+          phone: '555-555-5556',
+          profilePicture: janeSmithImage,
+        },
+        {
+          id: 3,
+          name: 'Mike Johnson',
+          position: 'UX Designer',
+          email: 'mike.johnson@example.com',
+          phone: '555-555-5557',
+          profilePicture: mikeJohnsonImage,
+        },
       ];
       setEmployees(fetchedEmployees);
       setLoading(false);
@@ -87,9 +115,26 @@ const Employees = () => {
         <List>
           {sortedEmployees.map(employee => (
             <ListItem key={employee.id}>
+              <ListItemAvatar>
+                <Avatar src={employee.profilePicture} />
+              </ListItemAvatar>
               <ListItemText
                 primary={employee.name}
-                secondary={employee.position}
+                secondary={
+                  <>
+                    <Typography component="span" variant="body2" color="text.primary">
+                      {employee.position}
+                    </Typography>
+                    <br />
+                    <Typography component="span" variant="body2" color="text.secondary">
+                      {employee.email}
+                    </Typography>
+                    <br />
+                    <Typography component="span" variant="body2" color="text.secondary">
+                      {employee.phone}
+                    </Typography>
+                  </>
+                }
               />
             </ListItem>
           ))}

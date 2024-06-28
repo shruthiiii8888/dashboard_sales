@@ -49,7 +49,7 @@ const ColorPicker = () => {
         margin: 'auto',
       }}
     >
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom sx={{ color: 'royalblue' }}>
         Color Picker
       </Typography>
       <SketchPicker color={color} onChangeComplete={handleColorChange} />
