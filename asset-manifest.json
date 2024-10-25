@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/celebal-week3/static/css/main.e1729b52.css",
-    "main.js": "/celebal-week3/static/js/main.7a4a1bd1.js",
-    "static/media/image.png": "/celebal-week3/static/media/image.9073ffe16d532c7ebeef.png",
-    "index.html": "/celebal-week3/index.html",
-    "main.e1729b52.css.map": "/celebal-week3/static/css/main.e1729b52.css.map",
-    "main.7a4a1bd1.js.map": "/celebal-week3/static/js/main.7a4a1bd1.js.map"
+    "main.css": "/fleet_management_dashboard/static/css/main.e1729b52.css",
+    "main.js": "/fleet_management_dashboard/static/js/main.36b81000.js",
+    "index.html": "/fleet_management_dashboard/index.html",
+    "main.e1729b52.css.map": "/fleet_management_dashboard/static/css/main.e1729b52.css.map",
+    "main.36b81000.js.map": "/fleet_management_dashboard/static/js/main.36b81000.js.map"
   },
   "entrypoints": [
     "static/css/main.e1729b52.css",
-    "static/js/main.7a4a1bd1.js"
+    "static/js/main.36b81000.js"
   ]
 }
