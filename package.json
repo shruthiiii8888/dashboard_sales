@@ -1,5 +1,5 @@
 {
-  "homepage": "https://shruthiiii8888.github.io/celebal-week3",
+  "homepage": "https://shruthiiii8888.github.io/fleet_management_dashboard",
   "name": "react-admin-dashboard",
   "version": "0.1.0",
   "private": true,
@@ -39,8 +39,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -65,6 +65,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.2.0"
   }
 }
