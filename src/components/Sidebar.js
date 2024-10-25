@@ -1,7 +1,7 @@
 // src/components/Sidebar.js
 import React from 'react';
 import { Drawer, List, ListItem, ListItemIcon, ListItemText, Toolbar, Typography } from '@mui/material';
-import { Home, People, ShoppingCart, BarChart, CalendarToday, Dashboard, Edit, Palette, PieChart, ShowChart, BarChart as BarChartIcon } from '@mui/icons-material';
+import { Home, People, BarChart, CalendarToday, Dashboard, Edit, Palette, PieChart, ShowChart, BarChart as BarChartIcon } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
@@ -29,9 +29,8 @@ const Sidebar = () => {
         {[
           { text: 'Dashboard', icon: <Dashboard />, link: '/' },
           { text: 'Ecommerce', icon: <Home />, link: '/ecommerce' },
-          { text: 'Orders', icon: <ShoppingCart />, link: '/orders' },
-          { text: 'Employees', icon: <People />, link: '/employees' },
-          { text: 'Customers', icon: <People />, link: '/customers' },
+          { text: 'Vehicle List', icon: <People />, link: '/vehicle-list' }, // Changed Employees to Vehicle List
+          { text: 'Charging Schedule', icon: <People />, link: '/charging-schedule' }, // Changed Customers to Charging Schedule
           { text: 'Calendar', icon: <CalendarToday />, link: '/calendar' },
           { text: 'Kanban', icon: <BarChart />, link: '/kanban' },
           { text: 'Editor', icon: <Edit />, link: '/editor' },
